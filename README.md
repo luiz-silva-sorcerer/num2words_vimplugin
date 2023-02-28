@@ -1,35 +1,51 @@
+*num2words_vimplugin* - Replaces numerals with corresponding English words
 
-# Num2Words Vim Plugin
+          _   _  _   _  __  __   ____  _  _  ___  ___  __    __~
+         | \ | || | | ||  \/  | / _  \| || ||   ||   \|  \  / /~
+         |  \| || | | || |\/| ||_/_) /| || || | || | || | || | ~
+         |     || | | || |  | |  / _/ | /\ || | ||   /| | | \ \~
+         | |\  || |_| || |  | | / /__ |    || | || | \| | |_| |~
+         |_| \_||_____||_/  \_||_____| \/\/ |___||_|\/|__/|__/~
 
-### A simple wraper for num2words from PyPI, plus a bit of regex
 
+###                Wraper for the |num2words| Python library.
 
-## What it does
+==============================================================================
+##1. How it works
 
 Run the plugin with:
 
-    :WriteNumbers
+    `:WriteNumbers`
 
-And it will search every number in numeral form (`[0-9]+`) and replace it with corresponding English words, using the library `num2words` available on PyPI. 
+And it will search every number in numeral form (`[0-9]+`) and replace it with 
+corresponding English words, using the library |num2words| available on PyPI. 
 
-Ordinal numbers are also handled correctly, and are the main motivation for writing this plugin.
+Ordinal numbers are also handled correctly, and are the main motivation for 
+writing this plugin.
 
-__WARNING__: Does not work for decimals, or numbers with thousands separators. Will just convert each section separately. Please run a quick massage on your text first (For example, remove separators, and replace `.` with the word `point`). This feature may be included in the future.
+Note: Does not work for decimals, or numbers with thousands separators. Will 
+just convert each section separately. Please run a quick massage on your text 
+(for example remove separators, and replace `.` with the word `point`). 
+This feature may be included in the future.
 
+==============================================================================
+##2. Installation
 
-## How to install
+First, install the library using `pip`:
 
-First, install the dependency using `pip`:
+`    $ pip install num2words`
 
-    $ pip install num2words
+Then if using [vim-plug](https://github.com/junegunn/vim-plug), just clone 
+this repository under `~/.vim/plugged`, and add this to your `~/.vimrc`, 
+between the `call plug` lines:
 
-Then if using [vim-plug](https://github.com/junegunn/vim-plug), just clone this repository under `~/.vim/plugged`, and add this to your `~/.vimrc`, between the `call plug` lines:
+`    " Num2Words Plugin`
+`    Plug '~/.vim/plugged/num2words_vimplugin'`
 
-    " Num2Words Plugin
-    Plug '~/.vim/plugged/num2words_vimplugin'
+If you're using other plugin managers, check their instructions on how to 
+install local plugins.
 
-If you're using other plugin managers, check their instructions on how to install local plugins.
+Make sure your |vim| has |python3| support:
 
-Make sure your `vim` has `python3` support:
+`    $ vim --version | grep +python3`
 
-    $ vim --version | grep +python3
