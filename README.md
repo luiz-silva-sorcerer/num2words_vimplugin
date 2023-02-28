@@ -1,24 +1,24 @@
 *num2words_vimplugin* - Replaces numerals with corresponding English words
 
-          _   _  _   _  __  __   ____  _  _  ___  ___  __    __~
-         | \ | || | | ||  \/  | / _  \| || ||   ||   \|  \  / /~
-         |  \| || | | || |\/| ||_/_) /| || || | || | || | || | ~
-         |     || | | || |  | |  / _/ | /\ || | ||   /| | | \ \~
-         | |\  || |_| || |  | | / /__ |    || | || | \| | |_| |~
-         |_| \_||_____||_/  \_||_____| \/\/ |___||_|\/|__/|__/~
+          _   _  _   _  __  __   ____  _  _  ___  ___  __    __
+         | \ | || | | ||  \/  | / _  \| || ||   ||   \|  \  / /
+         |  \| || | | || |\/| ||_/_) /| || || | || | || | || | 
+         |     || | | || |  | |  / _/ | /\ || | ||   /| | | \ \
+         | |\  || |_| || |  | | / /__ |    || | || | \| | |_| |
+         |_| \_||_____||_/  \_||_____| \/\/ |___||_|\/|__/|__/
 
 
-###                Wraper for the |num2words| Python library.
+###                Wraper for the `num2words` Python library.
 
 ==============================================================================
 ##1. How it works
 
 Run the plugin with:
 
-    `:WriteNumbers`
+`   :WriteNumbers`
 
 And it will search every number in numeral form (`[0-9]+`) and replace it with 
-corresponding English words, using the library |num2words| available on PyPI. 
+corresponding English words, using the library `num2words` available on PyPI. 
 
 Ordinal numbers are also handled correctly, and are the main motivation for 
 writing this plugin.
@@ -45,7 +45,7 @@ between the `call plug` lines:
 If you're using other plugin managers, check their instructions on how to 
 install local plugins.
 
-Make sure your |vim| has |python3| support:
+Make sure your `vim` has `python3` support:
 
 `    $ vim --version | grep +python3`
 
