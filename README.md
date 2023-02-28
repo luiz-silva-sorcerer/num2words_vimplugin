@@ -40,7 +40,8 @@ Then if using [vim-plug](https://github.com/junegunn/vim-plug), just clone
 this repository under `~/.vim/plugged`, and add this to your `~/.vimrc`, 
 between the `call plug` lines:
 
-```" Num2Words Plugin
+```
+" Num2Words Plugin
 Plug '~/.vim/plugged/num2words_vimplugin'
 ```
 
