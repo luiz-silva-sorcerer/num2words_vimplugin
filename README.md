@@ -11,6 +11,7 @@
 ###                Wraper for the `num2words` Python library.
 
 ==============================================================================
+
 ##1. How it works
 
 Run the plugin with:
@@ -29,6 +30,7 @@ just convert each section separately. Please run a quick massage on your text
 This feature may be included in the future.
 
 ==============================================================================
+
 ##2. Installation
 
 First, install the library using `pip`:
@@ -40,6 +42,7 @@ this repository under `~/.vim/plugged`, and add this to your `~/.vimrc`,
 between the `call plug` lines:
 
 `    " Num2Words Plugin`
+
 `    Plug '~/.vim/plugged/num2words_vimplugin'`
 
 If you're using other plugin managers, check their instructions on how to 
