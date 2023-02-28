@@ -1,5 +1,5 @@
 *num2words_vimplugin* - Replaces numerals with corresponding English words
-
+```
           _   _  _   _  __  __   ____  _  _  ___  ___  __    __
          | \ | || | | ||  \/  | / _  \| || ||   ||   \|  \  / /
          |  \| || | | || |\/| ||_/_) /| || || | || | || | || | 
@@ -7,12 +7,13 @@
          | |\  || |_| || |  | | / /__ |    || | || | \| | |_| |
          |_| \_||_____||_/  \_||_____| \/\/ |___||_|\/|__/|__/
 
+```
 
 ###                Wraper for the `num2words` Python library.
 
 ==============================================================================
 
-##1. How it works
+## 1. How it works
 
 Run the plugin with:
 
@@ -31,7 +32,7 @@ This feature may be included in the future.
 
 ==============================================================================
 
-##2. Installation
+## 2. Installation
 
 First, install the library using `pip`:
 
@@ -41,9 +42,9 @@ Then if using [vim-plug](https://github.com/junegunn/vim-plug), just clone
 this repository under `~/.vim/plugged`, and add this to your `~/.vimrc`, 
 between the `call plug` lines:
 
-`    " Num2Words Plugin`
-
-`    Plug '~/.vim/plugged/num2words_vimplugin'`
+```    " Num2Words Plugin`
+    Plug '~/.vim/plugged/num2words_vimplugin'`
+```
 
 If you're using other plugin managers, check their instructions on how to 
 install local plugins.
